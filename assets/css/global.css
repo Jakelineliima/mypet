@@ -1,54 +1,54 @@
-/* ====== Variáveis Css ====== */
-
-
-/* ====== Font Familys ====== */
+/* ====== Variables Css ====== */
 
 :root {
-    --font: 'Nunito', sans-serif;
-}
-
-
-/* ====== Font Sizes ====== */
-
-:root {
-    --display: 2.5rem;
-    --headline: 1.5rem;
-    --subheader: 1.125rem;
-    --title: 1.25rem;
-    --body: .875rem;
+    /* === Font Familys === */
+    --font: 'Inter', sans-serif;
+    /* === Headline / Font Sizes === */
+    --h1: 2.5rem;
+    --h2: 1.5rem;
+    --h3: 1.25rem;
+    --h4: 1rem;
+    --body-normal: .1rem;
+    --body-small: .875rem;
 }
 
 
 /* ====== Colors ======= */
 
 :root {
-    /* == primary == */
-    --primary-light: #9D46FF;
-    --primary-main: #6200EA;
-    --primary-dark: #0A00B6;
-    /* == grays == */
-    --text-light: #495057;
-    --text-dark: #343A40;
-    --border-light: #CED4DA;
-    --border-dark: #ADB5BD;
-    --bg-light: #F8F9FA;
-    --bg-dark: #E9ECEF;
-    --white: #fff;
-}
-
-
-/* === shadows === */
-
-:root {
-    --shadow-xs: 0 2px 4px rgba(0, 0, 0, .24);
-    --shadow-sm: 0 4px 8px rgba(0, 0, 0, .16);
-    --shadow-md: 0 8px 16px rgba(0, 0, 0, .24);
-    --shadow-lg: 0 16px 24px rgba(0, 0, 0, .16);
-    /* === Colors === */
-    --shadow-color-xs: 0 2px 4px rgba(0, 200, 83, 0.24);
-    --shadow-color-sm: 0 4px 8px rgba(0, 200, 83, 0.16);
-    --shadow-color-md: 0 8px 16px rgba(0, 200, 83, 0.24);
-    --shadow-color-lg: 0 16px 24px rgba(0, 200, 83, 0.16);
+    /* === Primary === */
+    --p-100: #7B61FF;
+    --p-80: #9581FF;
+    --p-60: #B0A0FF;
+    --p-40: #CAC0FF;
+    --p-20: #E5DFFF;
+    --p-10: #F2EFFF;
+    /* === Dark === */
+    --d-100: #202020;
+    --d-80: #4D4D4D;
+    --d-60: #797979;
+    --d-40: #A6A6A6;
+    --d-20: #D2D2D2;
+    /* === White === */
+    --W-100: #FFFFFF;
+    --W-80: #FAFAFA;
+    --W-60: #F5F5F5;
+    --W-40: #EFEFEF;
+    --W-20: #EAEAEA;
+    /* === Success === */
+    --s-100: #39F256;
+    --s-80: #60F578;
+    --s-60: #88F79A;
+    --s-40: #B0FABB;
+    --s-20: #D7FCDD;
+    --s-10: #EBFEEE;
+    /* === Error === */
+    --s-100: #F23987;
+    --s-80: #F5609F;
+    --s-60: #F788B7;
+    --s-40: #FAB0CF;
+    --s-20: #FCD7E7;
+    --s-10: #FEEBF3;
 }
 
 
@@ -56,6 +56,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -73,7 +75,7 @@ a {
 
 p,
 a {
-    color: var(--text-light);
+    color: var(--d-60);
 }
 
 ul {
@@ -85,6 +87,14 @@ img {
     display: block;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.6;
+    color: var(--p-100);
+}
+
 
 /* ====== Classes ====== */
 
@@ -93,8 +103,8 @@ img {
 e para dar o espaço em branco neceessario. */
 
 .container {
-    max-width: 1140px;
-    padding: 96px 15px;
+    max-width: 1300px;
+    padding: 64px 0;
     margin: 120px auto;
 }
 
@@ -116,9 +126,8 @@ e para dar o espaço em branco neceessario. */
 }
 
 .social-media i {
-    color: var(--white);
-    font-size: var(--subheader);
-    background-color: var(--primary-main);
+    color: var(--d-60);
+    font-size: var(--h2);
     border-radius: 30px;
     transition: all 200ms ease;
     padding: 8px;
@@ -135,80 +144,61 @@ e para dar o espaço em branco neceessario. */
 /* ====== Components ====== */
 
 
-/* ====== Components / Buttons ====== */
+/* ===  Buttons === */
 
-.btn-lg {
+.btn {
     display: inline-block;
     padding: 16px 40px;
-    border-radius: 40px;
-    font-size: var(--body);
+    font-size: var(--body-small);
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
     transition: all 200ms ease;
+    color: var(--W-100);
+    border-radius: 4px;
+    background-color: var(--p-100);
 }
 
-.btn-primary {
-    color: var(--bg-light);
-    background-color: var(--primary-main);
-    border: 1px solid var(--primary-main);
+.btn:hover {
+    background-color: var(--p-80);
 }
 
-.btn-primary:hover {
-    background-color: var(--primary-light);
-    border: 1px solid var(--primary-light);
-}
-
-.btn-primary:active {
-    background-color: var(--primary-dark);
-    border: 1px solid var(--primary-dark);
-}
-
-.btn-secondary {
-    color: var(--bg-dark);
-    background-color: var(--bg-dark);
-    border: 1px solid var(--bg-dark);
-    color: var(--text-light);
-}
-
-.btn-secondary:hover {
-    color: var(--text-light);
-    background-color: var(--bg-light);
-    border: 1px solid var(--bg-light);
-}
-
-.btn-secondary:active {
-    background-color: var(--border-dark);
-    border: 1px solid var(--border-dark);
-    transform: scale(.9);
+.btn:active {
+    background-color: var(--p-60);
 }
 
 
-/* ====== Components / Buttons ====== */
+/* === Inputs === */
+
+label {
+    font-size: var(--body-small);
+    display: block;
+    margin: 20px 0 16px 0;
+    color: var(--d-60);
+}
 
 input {
-    max-width: 255px;
+    max-width: 420px;
     padding: 16px;
-    border: 1px solid var(--border-light);
-    border-radius: 40px;
+    border: 1px solid var(--d-20);
+    border-radius: 4px;
 }
 
 input:focus {
-    outline-color: var(--primary-dark);
+    outline-color: var(--p-100);
     background-color: transparent;
 }
 
 
-/* ====== Components / Header ====== */
+/* ===  Header === */
 
 .main-header {
-    max-width: 1140px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 16px 15px;
+    padding: 24px 5px;
     justify-content: space-between;
     align-items: center;
-}
-
-#btn-mobile {
-    display: none;
+    background-color: var(--W-100);
 }
 
 .nav-links {
@@ -217,15 +207,17 @@ input:focus {
 }
 
 .nav-link {
-    color: var(--text-light);
     padding: 20px;
-    font-size: var(--body);
+    font-size: var(--body-small);
     transition: all 300ms ease;
-    /* Transição padrão */
 }
 
 .nav-link:hover {
     color: var(--primary-main);
+}
+
+#btn-mobile {
+    display: none;
 }
 
 
@@ -245,12 +237,12 @@ input:focus {
         width: 100%;
         top: 85px;
         right: 0;
-        background: var(--white);
         z-index: 1000;
         height: 0px;
         transition: .6s;
         visibility: hidden;
         overflow-y: hidden;
+        text-align: center;
     }
     #navbar.active #nav-links {
         display: flex;
@@ -268,7 +260,7 @@ input:focus {
     #ham-btn {
         display: block;
         width: 20px;
-        border-top: 2px solid var(--primary-main);
+        border-top: 2px solid var(--p-100);
     }
     #ham-btn::after,
     #ham-btn::before {
@@ -276,7 +268,7 @@ input:focus {
         display: block;
         width: 20px;
         height: 2px;
-        background: var(--primary-main);
+        background: var(--p-100);
         margin-top: 5px;
         transition: .3s;
         position: relative;
@@ -297,11 +289,11 @@ input:focus {
 }
 
 
-/* ====== Components / Footer ====== */
+/* === Footer === */
 
 .main-footer {
     flex-direction: column;
-    background-color: var(--bg-light);
+    background-color: var(--W-80);
     padding: 64px 15px;
 }
 
