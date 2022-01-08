@@ -1,0 +1,134 @@
+.hero, .sobre
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 55px;
+}
+
+.grid:nth-child(1)
+{
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+}
+
+.grid:nth-child(2)
+{
+  grid-column: 2/3;
+}
+
+.grid > img
+{
+  width: 640px;
+  height: 433px;
+  object-fit: cover;
+}
+
+.title
+{
+  font-size: 40px;
+  color: #7b61ff;
+}
+
+.flexDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.btns
+{
+  background-color: #7B61FF;
+  color: #fff;
+  width: 215px;
+  height: 46px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  transition: all 200ms ease;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.btns:hover
+{
+  background-color: #9581FF;
+}
+
+.btns:active
+{
+  background-color: #B0A0FF;
+}
+
+.cronograma .title, .duvidas .title
+{
+  text-align: center;
+}
+
+.cronograma
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.duvidas
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.duvidas > div, .item
+{
+  grid-column: 2/3;
+}
+
+.item > label
+{
+  display: block;
+  border-radius: 4px;
+  width: 640px;
+  height: 50px;
+  color: #797979;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+  border: 3px solid #D2D2D2;
+}
+
+.item > label:hover
+{
+  transition: all 200ms ease;
+  color: #D2D2D2;
+}
+
+.item > ul
+{
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .4s linear;
+  padding: 0;
+}
+
+.item > input
+{
+  display: none;
+}
+
+.item > input:checked ~ ul
+{
+  height: auto;
+  max-height: 200px;
+  transform: all;
+}
+
+.item > input:checked ~ label
+{
+  background-color: #7B61FF;
+  border: none;
+  color: #fff;
+  padding: 11px;
+}
