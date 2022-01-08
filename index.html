@@ -1,125 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ====== Seo ====== -->
-    <meta name="description" content="Campanha de vacinação contra a raiva 2022">
+    <meta
+      name="description"
+      content="Campanha de vacinação contra a raiva 2022"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mypet | Campanha de vacinação contra a raiva 2022" />
+    <meta
+      property="og:title"
+      content="Mypet | Campanha de vacinação contra a raiva 2022"
+    />
     <meta property="og:description" content="Vacinação contra a raiva 2022" />
     <meta property="og:url" content="http://mypet.com" />
     <meta property="og:image" content="assets/img/og-image.png" />
     <!-- ====== Css ====== -->
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- ====== Fonts ====== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- ====== Icons ====== -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- ====== Fav Icon ====== -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Mypets | Campanha de vacinação contra a raiva 2022</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- ====== Header ====== -->
     <header class="main-header flex">
-        <a href="index.html" class="logo">
-            <img src="assets/img/svg/logo.svg" alt="Mypet">
-        </a>
-        <nav class="navbar" id="navbar">
-            <!-- = menu ham = -->
-            <button id="btn-mobile">
-                <span id="ham-btn"></span>
-            </button>
-            <ul class="nav-links flex" id="nav-links">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sobre" class="nav-link">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#cronograma" class="nav-link">Cronograma</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#equipe" class="nav-link">Equipe</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#duvidas" class="nav-link">Dúvidas</a>
-                </li>
-                <li class="nav-item">
-                    <a href="ficha.html" class="nav-link">Ficha Online</a>
-                </li>
-            </ul>
-        </nav>
+      <a href="index.html" class="logo">
+        <img src="assets/img/svg/logo.svg" alt="Mypet" />
+      </a>
+      <nav class="navbar" id="navbar">
+        <!-- = menu ham = -->
+        <button id="btn-mobile">
+          <span id="ham-btn"></span>
+        </button>
+        <ul class="nav-links flex" id="nav-links">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cronograma" class="nav-link">Cronograma</a>
+          </li>
+          <li class="nav-item">
+            <a href="#equipe" class="nav-link">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a href="#duvidas" class="nav-link">Dúvidas</a>
+          </li>
+          <li class="nav-item">
+            <a href="ficha.html" class="nav-link">Ficha Online</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ====== Hero ====== -->
+      <section class="hero" id="home">
+          <div class="grid flexDiv">
+              <h3 class="title">Porque é importante vacinar meu pet?</h3>
+              <p>
+                  A vacinação é um cuidado essencial, pois por meio
+                  dela seu pet fica protegido de doença infecciosas
+                  que podem até ser fatais.
+              </p>
+              <button class="btns">vacinar meu pet</button>
+          </div>
+          <div class="grid">
+              <img src="./assets/img/hero-img.png" alt="">
+          </div>
+      </section>
     </header>
 
+    <main>
 
-    <!-- ====== Hero ====== -->
-    <section class="hero" id="home">
+      <!-- ====== Sobre ====== -->
+      <section class="sobre" id="sobre">
+          <div class="grid">
+            <img src="./assets/img/sobre-img.png" alt="">
+          </div>
+          <div class="grid flexDiv">
+            <h3 class="title">É gratuito a proteção para seu pet.</h3>
+            <p>
+              A campanha é necessária para cuidar dos nossos
+              pets, pois promove proteção contra a raiva que
+              pode ser fatal, vacinar seu animal é de extrema
+              importância pois assim você protege ele e outros
+              animais.
+            </p>
+          </div>
+      </section>
 
-    </section>
+      <!-- ====== Cronograma ====== -->
+      <section class="cronograma" id="cronograma">
+        <div>
+          <h3 class="title">Cronograma</h3>
+        </div>
+        <button class="btns">faça sua ficha</button>
+      </section>
 
-    <!-- ====== Sobre ====== -->
-    <section class="sobre" id="sobre">
-
-    </section>
-
-    <!-- ====== Cronograma ====== -->
-    <main class="cronograma" id="cronograma">
+      <!-- ====== Dúvidas ====== -->
+      <section class="duvidas" id="duvidas">
+        <div>
+          <h3 class="title">Dúvidas</h3>
+        </div>
+          <div class="item">
+            <input type="checkbox" id="check1">
+            <label for="check1">O que é Raiva?</label>
+            <ul>
+              <li>
+                Raiva é uma doença infectocontagiosa
+                causada por um vírus que atinge o Sistema
+                Nervoso Central (Cérebro de Medula).
+                É uma doença que não tem cura, sendo,
+                portanto, fatal.
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <input type="checkbox" id="check2">
+            <label for="check2">Quem pode pegar Raiva?</label>
+            <ul>
+              <li>
+                Raiva é uma doença infectocontagiosa
+                causada por um vírus que atinge o Sistema
+                Nervoso Central (Cérebro de Medula).
+                É uma doença que não tem cura, sendo,
+                portanto, fatal.
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <input type="checkbox" id="check3">
+            <label for="check3">Como ocorre a transmissão da Raiva?</label>
+            <ul>
+              <li>
+                Raiva é uma doença infectocontagiosa
+                causada por um vírus que atinge o Sistema
+                Nervoso Central (Cérebro de Medula).
+                É uma doença que não tem cura, sendo,
+                portanto, fatal.
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <input type="checkbox" id="check4">
+            <label for="check4">
+              O que devo fazer se tiver
+              contato com animais com sintomas de Raiva?
+            </label>
+            <ul>
+              <li>
+                Raiva é uma doença infectocontagiosa
+                causada por um vírus que atinge o Sistema
+                Nervoso Central (Cérebro de Medula).
+                É uma doença que não tem cura, sendo,
+                portanto, fatal.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     </main>
 
-    <!-- ====== Equipe ====== -->
-    <section class="equipe" id="equipe">
-
-    </section>
-
-    <!-- ====== Dúvidas ====== -->
-    <section class="duvidas" id="duvidas">
-
-    </section>
-
-    <!-- ====== Call to Action Ficha Online ====== -->
-    <section class="cta-ficha" id="cta-ficha">
-
-    </section>
-
     <!-- ====== Footer ====== -->
     <footer class="main-footer flex-center">
-
-        <img src="assets/img/svg/logo.svg" alt="Mypets">
-        <ul class="social-media">
-            <li>
-                <a href="#">
-                    <i class="ri-twitter-line"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="ri-instagram-line"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="ri-facebook-line"></i>
-                </a>
-            </li>
-        </ul>
-        <p>© 2021 Mypets | Todos os direitos reservados</p>
-
+      <img src="assets/img/svg/logo.svg" alt="Mypets" />
+      <ul class="social-media">
+        <li>
+          <a href="#">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-facebook-line"></i>
+          </a>
+        </li>
+      </ul>
+      <p>© 2021 Mypets | Todos os direitos reservados</p>
     </footer>
 
     <!-- ====== Js ====== -->
     <script src="assets/js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
