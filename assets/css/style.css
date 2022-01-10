@@ -71,12 +71,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 90px;
 }
 
 .duvidas
 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 90px;
 }
 
 .duvidas > div, .item
@@ -86,15 +88,16 @@
 
 .item > label
 {
-  display: block;
+  display: flex;
+  align-items: center;
   border-radius: 4px;
   width: 640px;
   height: 50px;
   color: #797979;
   font-weight: 600;
-  padding: 10px;
   cursor: pointer;
   border: 3px solid #D2D2D2;
+  padding-left: 12px;
 }
 
 .item > label:hover
@@ -130,5 +133,45 @@
   background-color: #7B61FF;
   border: none;
   color: #fff;
-  padding: 11px;
+  padding-left: 12px;
+}
+
+
+@media only screen and (max-width: 900px)
+{
+  .hero, .sobre
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre
+  {
+    flex-direction: column-reverse;
+  }
+  .grid
+  {
+    margin: 0 50px;
+  }
+  .grid > p
+  {
+    margin: 15px 0;
+  }
+  .grid > img
+  {
+    margin: 20px 0;
+  }
+  .cronograma
+  {
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 570px)
+{
+  .item > label
+  {
+    width: 440px;
+    height: 70px;
+  }
 }
